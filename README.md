@@ -1,3 +1,3 @@
 # theUser
 -----
-`npm install` and 'react-native run-android'
+`npm install` and `react-native run-android`
