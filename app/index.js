@@ -1,10 +1,15 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { Component } from 'react';
 
-export default ()=> {
-  return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
-  )
-}
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import reducers from './reducers/reducer';
+import App from './App';
+
+const store = createStore(reducers);
+
+export default ()=> (
+	<Provider store={store}>
+		<App/>
+	</Provider>
+);
